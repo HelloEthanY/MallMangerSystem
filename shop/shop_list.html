@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../layui/css/layui.css">
+		<script src="../js/jquery/jquery-1.8.0.min.js" type="text/javascript"></script>
+		<script src="../layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/config.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<div class="shop-wapper">
+			<!--商品列表-->
+			<div class="shop-table-content">
+				<!--修改条目的高度 到layui.css 查找 layui-table-cell 修改其高度-->
+				<table class="layui-hide" id="shopList" lay-filter="shop-layui"></table>
+				<!--自定义头部工具栏-->
+				<script type="text/html" id="toolbarShop">
+					<div class="layui-btn-container">
+						<button class="layui-btn layui-btn-sm" lay-event="add">添加</button>
+						<button class="layui-btn layui-btn-sm" lay-event="update">编辑</button>
+						<button class="layui-btn layui-btn-sm" lay-event="delete">删除</button>
+					</div>
+				</script>
+				<!--查看-编辑-删除-->
+				<script type="text/html" id="barShop">
+					<a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+					<a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+					<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+				</script>
+			</div>
+
+		</div>
+	</body>
+	<script src="../js/shop-list.js" type="text/javascript"></script>
+
+</html>

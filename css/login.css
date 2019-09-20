@@ -1,0 +1,42 @@
+.login-wapper {
+	width: 100%;
+	height: 100%;
+	background-color: #009F95;
+}
+
+.login-content {
+	width: 440px;
+	border-radius: 10px;
+	position: absolute;
+	height: 260px;
+	bottom: 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: table;
+	vertical-align: middle;
+	text-align: center;
+	right: 20px;
+}
+
+.form-content {
+	position: relative;
+	top: 35px;
+	width: 400px;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.layui-form-label {
+	color: white;
+}
+
+.layui-input {
+	width: 240px;
+}
+
+#canvas {
+	float: right;
+	display: inline-block;
+	cursor: pointer;
+	width: 100px;
+	height: 38px;
+}
